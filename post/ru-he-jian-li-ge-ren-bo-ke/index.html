@@ -1,0 +1,206 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>如何建立个人博客？ | Gridea</title>
+<meta name="description" content="温故而知新" />
+<link rel="shortcut icon" href="https://angola95.github.io/favicon.ico?v=1571736350077">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://angola95.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://angola95.github.io">
+  <img class="avatar" src="https://angola95.github.io/images/avatar.png?v=1571736350077" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              如何建立个人博客？
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-10-22
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>自微信推出公众号后，无论是博客时代就开始写作的人，还是后来有志于投身新媒体的人，都纷纷注册了自己的账号。</p>
+<p>公众号首创的原创保护和赞赏机制，让它成了许多内容生产者喜爱的一个平台。</p>
+<p>但如果你经常使用公众号，可能会发现它也存在一些限制：不能跳转到外部链接、新开的公众号没有留言功能等。</p>
+<p>而这些限制，对于博客来说，是不存在的。</p>
+<p>即便现在是属于公众号的时代，但如果你还想折腾一下，体验一下写博客的感觉，那么，从此刻开始，动手搭建一个自己的博客，还是值得的。</p>
+<p>注：本文适合无代码基础的小白选手，因为我也是从零开始学起的。</p>
+<h1 id="01博客最终效果">01.博客最终效果</h1>
+<h1 id="02搭建博客">02.搭建博客</h1>
+<h3 id="1注册github账号">①注册Github账号</h3>
+<p>打开Github官网，使用邮箱注册Github账号，注册时请谨慎设置自己的用户名，因为用户名后面会成为博客域名的一部分。</p>
+<p>图片: https://uploader.shimo.im/f/NDxjTC2lgn8PeUPl.png</p>
+<p>获得了Github账号后，点击左侧的Create a repository，创建一个仓库，用于存放博客的相关数据。</p>
+<p>图片: https://uploader.shimo.im/f/vCgFyNIgNWsnDqQI.png</p>
+<p>在设置仓库名称时，它的格式是固定的，采用「用户名.github.io」的格式，因为到后面，你就会发现，仓库名称原来就是博客的域名(地址)。</p>
+<p>如下图，我的用户名为angola95，因此仓库名为「angola95.github.io」。</p>
+<p>设置好仓库名称后，勾选Initialize this repository with a README，最后点击底部的Create repository，就完成了仓库的创建。</p>
+<p>图片: https://uploader.shimo.im/f/IDFS4ZmduJ0YZQoE.png</p>
+<p>创建好仓库后，点击右上方的账号头像，选择Settings。</p>
+<p>图片: https://uploader.shimo.im/f/FOZR02WTdgMdnb83.png</p>
+<p>在设置菜单中，按照Developer settings--Personal access tokens的路径进入，点击右上方的Generate new token。</p>
+<p>图片: https://uploader.shimo.im/f/c5mF8gvzWL8e3ZjV.gif</p>
+<p>在New token设置页面，Note输入对Token的描述或备注，勾选下方的repo。</p>
+<p>图片: https://uploader.shimo.im/f/Jw3y31erpfoKcvQG.png</p>
+<p>最后将页面拉至底部，点击Generate token，就会生成一串由数字和字母组成的字符，这就是刚刚生成的Token。</p>
+<p>图片: https://uploader.shimo.im/f/bhg3uGfPqLUHt7F1.png</p>
+<p>②安装Git</p>
+<p>Git是一个分布式版本控制软件，方便多个开发者同时为一个项目贡献代码，彼此间互不影响，大大提高了团队合作的效率。</p>
+<p>Git的数据库分为远端数据库和本地数据库，我们在Github上创建的仓库，可以看成是博客的远端数据库，而本地数据库就是我们使用的电脑。</p>
+<p>使用Git，能将我们在本地电脑写的博客内容，自动地推送到远端的Github上，而连接本地和远端数据库的桥梁，就是前面生成的Token。</p>
+<p>Git支持Win、macOS和Linux三大平台，下载之后，它的安装方法与普通软件一样。</p>
+<p>Git下载地址：<br>
+https://git-scm.com/downloads</p>
+<p>③安装博客写作客户端</p>
+<p>Gridea是一个静态的博客写作客户端，它提供了免费和收费的博客主题，通过应用不同的主题，可以让原本简陋的博客更有设计感。</p>
+<p>图片: https://uploader.shimo.im/f/bqhpG4mWiv0RAi0d.png</p>
+<p>安装了Gridea后，需要先进行一定的配置。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#01%E5%8D%9A%E5%AE%A2%E6%9C%80%E7%BB%88%E6%95%88%E6%9E%9C">01.博客最终效果</a></li>
+<li><a href="#02%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2">02.搭建博客</a><br>
+*
+<ul>
+<li><a href="#1%E6%B3%A8%E5%86%8Cgithub%E8%B4%A6%E5%8F%B7">①注册Github账号</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://angola95.github.io/post/hello-gridea">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://angola95.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
