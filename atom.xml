@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://angola95.github.io/</id>
     <title>个人博客</title>
-    <updated>2019-10-24T09:01:00.539Z</updated>
+    <updated>2019-10-24T09:32:31.303Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://angola95.github.io/"/>
     <link rel="self" href="https://angola95.github.io//atom.xml"/>
@@ -25,8 +25,18 @@
 <p>在说如何搭建博客之前，我们先来看一下我搭建的博客：</p>
 <h1 id="02搭建博客">02.搭建博客</h1>
 <h3 id="1注册github账号">①注册Github账号</h3>
-<p>打开Github官网，使用邮箱注册Github账号，注册时请谨慎设置自己的用户名，因为用户名后面会成为博客域名的一部分。         <img src="https://uploader.shimo.im/f/NDxjTC2lgn8PeUPl.png!thumbnail" alt="img"></p>
-<p>获得了Github账号后，点击左侧的Create a repository，创建一个仓库，用于存放博客的相关数据。         <img src="https://uploader.shimo.im/f/vCgFyNIgNWsnDqQI.png!thumbnail" alt="img">       在设置仓库名称时，它的格式是固定的，采用「<strong>用户名.github.io</strong>」的格式，因为到后面，你就会发现，<strong>仓库名称原来就是博客的域名(地址)</strong>。 如下图，我的用户名为angola95，因此仓库名为「angola95.github.io」。 设置好仓库名称后，勾选<strong>Initialize this repository with a README</strong>，最后点击底部的<strong>Create repository</strong>，就完成了仓库的创建。         <img src="https://uploader.shimo.im/f/IDFS4ZmduJ0YZQoE.png!thumbnail" alt="img">       创建好仓库后，点击右上方的账号头像，选择<strong>Settings</strong>。         <img src="https://uploader.shimo.im/f/FOZR02WTdgMdnb83.png!thumbnail" alt="img">       在设置菜单中，按照<strong>Developer settings</strong>--<strong>Personal access tokens</strong>的路径进入，点击右上方的<strong>Generate new token</strong>。         <img src="https://uploader.shimo.im/f/c5mF8gvzWL8e3ZjV.gif" alt="img">       在New token设置页面，Note输入对Token的描述或备注，勾选下方的repo。         <img src="https://uploader.shimo.im/f/Jw3y31erpfoKcvQG.png!thumbnail" alt="img">       最后将页面拉至底部，点击Generate token，就会生成一串由数字和字母组成的字符，这就是刚刚生成的Token。         <img src="https://uploader.shimo.im/f/bhg3uGfPqLUHt7F1.png!thumbnail" alt="img"></p>
+<p>打开Github官网，使用邮箱注册Github账号，注册时请谨慎设置自己的用户名，因为用户名后面会成为博客域名的一部分。</p>
+<figure data-type="image" tabindex="1"><img src="https://uploader.shimo.im/f/NDxjTC2lgn8PeUPl.png!thumbnail" alt="img"></figure>
+<p>获得了Github账号后，点击左侧的Create a repository，创建一个仓库，用于存放博客的相关数据。<br>
+<img src="https://uploader.shimo.im/f/vCgFyNIgNWsnDqQI.png!thumbnail" alt="img"><br>
+在设置仓库名称时，它的格式是固定的，采用「<strong>用户名.github.io</strong>」的格式，因为到后面，你就会发现，<strong>仓库名称原来就是博客的域名(地址)</strong>。</p>
+<p>如下图，我的用户名为angola95，因此仓库名为「angola95.github.io」。<br>
+设置好仓库名称后，勾选<strong>Initialize this repository with a README</strong>，最后点击底部的<strong>Create repository</strong>，就完成了仓库的创建。<br>
+<img src="https://uploader.shimo.im/f/IDFS4ZmduJ0YZQoE.png!thumbnail" alt="img"></p>
+<p>创建好仓库后，点击右上方的账号头像，选择<strong>Settings</strong>。<br>
+<img src="https://uploader.shimo.im/f/FOZR02WTdgMdnb83.png!thumbnail" alt="img"><br>
+在设置菜单中，按照<strong>Developer settings</strong>--<strong>Personal access tokens</strong>的路径进入，点击右上方的<strong>Generate new token</strong>。<br>
+<img src="https://uploader.shimo.im/f/c5mF8gvzWL8e3ZjV.gif" alt="img">       在New token设置页面，Note输入对Token的描述或备注，勾选下方的repo。         <img src="https://uploader.shimo.im/f/Jw3y31erpfoKcvQG.png!thumbnail" alt="img">       最后将页面拉至底部，点击Generate token，就会生成一串由数字和字母组成的字符，这就是刚刚生成的Token。         <img src="https://uploader.shimo.im/f/bhg3uGfPqLUHt7F1.png!thumbnail" alt="img"></p>
 <h3 id="2安装git">②安装Git</h3>
 <p>Git是一个<strong>分布式版本控制软件</strong>，方便多个开发者同时为一个项目贡献代码，彼此间互不影响，大大提高了团队合作的效率。 Git的数据库分为<strong>远端数据库和本地数据库</strong>，我们在Github上创建的仓库，可以看成是博客的远端数据库，而本地数据库就是我们使用的电脑。 <strong>使用Git，能将我们在本地电脑写的博客内容，自动地推送到远端的Github上</strong>，而连接本地和远端数据库的桥梁，就是前面生成的<strong>Token</strong>。 Git支持<strong>Win、macOS和Linux</strong>三大平台，下载之后，它的安装方法与普通软件一样，更换软件安装位置之后，一直点击下一步，直至开始安装。 Git下载地址：https://git-scm.com/downloads</p>
 <h3 id="3安装博客写作客户端">③安装博客写作客户端</h3>
@@ -49,7 +59,7 @@
 <p>为了能实时预览效果，我建议使用可实时预览效果的外部Markdown编辑器，如<strong>马克飞象</strong>和<strong>Typora</strong>等。</p>
 <p>马克飞象，是印象笔记推出的<strong>在线Markdown编辑器</strong>，只要有网络，你就能随时开始写作。 此外，由于马克飞象和印象笔记是同一家公司的产品，通过绑定印象笔记账号，就能实时将内容保存到印象笔记中，这也间接实现了内容在多个平台间的同步。</p>
 <p>​</p>
-<figure data-type="image" tabindex="1"><img src="https://uploader.shimo.im/f/5eRkk0Y3dfoZrej0.png!thumbnail" alt="Markdown实时预览"></figure>
+<figure data-type="image" tabindex="2"><img src="https://uploader.shimo.im/f/5eRkk0Y3dfoZrej0.png!thumbnail" alt="Markdown实时预览"></figure>
 <p>马克飞象在线地址：</p>
 <p>https://maxiang.io/</p>
 <p>Typora，是一个<strong>免费</strong>的Markdown客户端软件，支持Win、macOS和Linux三个平台。</p>
@@ -59,7 +69,7 @@
 <h3 id="3markdown图床">③Markdown图床</h3>
 <h1 id="04写在最后">04.写在最后</h1>
 <p>在Markdown中插入图片：</p>
-<figure data-type="image" tabindex="2"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/%E4%B8%8A%E4%BC%A0%E5%88%B0Github%E7%9A%84%E5%9B%BE%E7%89%87.jpg" alt="这是插入的图片"></figure>
+<figure data-type="image" tabindex="3"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/%E4%B8%8A%E4%BC%A0%E5%88%B0Github%E7%9A%84%E5%9B%BE%E7%89%87.jpg" alt="上传到Github的图片"></figure>
 ]]></content>
     </entry>
     <entry>
