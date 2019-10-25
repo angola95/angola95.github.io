@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://angola95.github.io//favicon.ico?v=1571911760331">
+<link rel="shortcut icon" href="https://angola95.github.io//favicon.ico?v=1571970609152">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://angola95.github.io//styles/main.css">
 
@@ -30,7 +30,7 @@
   <div class="site-header">
     <div class="left">
       <a href="https://angola95.github.io/">
-        <img class="avatar" src="https://angola95.github.io//images/avatar.png?v=1571911760331" alt="" width="32px" height="32px">
+        <img class="avatar" src="https://angola95.github.io//images/avatar.png?v=1571970609152" alt="" width="32px" height="32px">
       </a>
       <a href="https://angola95.github.io/">
         <h1 class="site-title">个人博客</h1>
@@ -111,18 +111,22 @@
 <p>但如果你经常使用公众号，可能会发现它也存在一些限制：不能跳转到外部链接、新开的公众号没有留言功能等。 而这些限制，对于博客来说，是不存在的。</p>
 <p>即便现在是属于公众号的时代，但如果你还想折腾一下，体验一下写博客的感觉，那么，从此刻开始，动手搭建一个自己的博客，还是值得的。</p>
 <p>注：本文适合无代码基础的小白选手，因为我也是从零开始学起的。</p>
+<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png" alt="搭建博客流程图"></figure>
 <h2 id="01博客最终效果">01.博客最终效果</h2>
 <p>在说如何搭建博客之前，我们先来看一下我搭建的博客：</p>
+<p>目前首页有两篇文章，内容有些单薄，但页面整体设计得比较简洁，是我喜欢的类型。如果你对这个页面不太满意，还可以使用其他的博客主题，更换主题也非常方便。</p>
+<figure data-type="image" tabindex="2"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/%E5%8D%9A%E5%AE%A2%E6%95%88%E6%9E%9C.gif" alt="博客效果图"></figure>
+<p>下图是博客文章的内页，两侧留白设计，文字的大小和行间距设置得比较合理，阅读的时候看起来也比较舒服。</p>
+<figure data-type="image" tabindex="3"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E5%86%85%E9%A1%B5.png" alt="博客文章内页"></figure>
 <h2 id="02搭建博客">02.搭建博客</h2>
 <h3 id="1注册github账号">①注册Github账号</h3>
 <p>打开Github官网，使用邮箱注册Github账号，注册时请谨慎设置自己的用户名，因为用户名后面会成为博客域名的一部分。</p>
-<figure data-type="image" tabindex="1"><img src="https://uploader.shimo.im/f/NDxjTC2lgn8PeUPl.png!thumbnail" alt="img"></figure>
-<p>获得了Github账号后，点击左侧的Create a repository，创建一个仓库，用于存放博客的相关数据。<br>
-<img src="https://uploader.shimo.im/f/vCgFyNIgNWsnDqQI.png!thumbnail" alt="img"><br>
-在设置仓库名称时，它的格式是固定的，采用「<strong>用户名.github.io</strong>」的格式，因为到后面，你就会发现，<strong>仓库名称原来就是博客的域名(地址)</strong>。</p>
+<figure data-type="image" tabindex="4"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025102912.png" alt="注册Github账号"></figure>
+<p>获得了Github账号后，点击左侧的Create a repository，创建一个仓库，用于存放博客的相关数据。</p>
+<p>在设置仓库名称时，它的格式是固定的，采用「<strong>用户名.github.io</strong>」的格式，因为到后面，你就会发现，<strong>仓库名称原来就是博客的域名(地址)</strong>。</p>
 <p>如下图，我的用户名为angola95，因此仓库名为「angola95.github.io」。</p>
 <p>设置好仓库名称后，勾选<strong>Initialize this repository with a README</strong>，最后点击底部的<strong>Create repository</strong>，就完成了仓库的创建。</p>
-<figure data-type="image" tabindex="2"><img src="https://uploader.shimo.im/f/IDFS4ZmduJ0YZQoE.png!thumbnail" alt="img"></figure>
+<figure data-type="image" tabindex="5"><img src="https://uploader.shimo.im/f/IDFS4ZmduJ0YZQoE.png!thumbnail" alt="img"></figure>
 <p>创建好仓库后，点击右上方的账号头像，选择<strong>Settings</strong>。<br>
 <img src="https://uploader.shimo.im/f/FOZR02WTdgMdnb83.png!thumbnail" alt="img"><br>
 在设置菜单中，按照<strong>Developer settings</strong>--<strong>Personal access tokens</strong>的路径进入，点击右上方的<strong>Generate new token</strong>。<br>
@@ -153,7 +157,7 @@
 <p>为了能实时预览效果，我建议使用可实时预览效果的外部Markdown编辑器，如<strong>马克飞象</strong>和<strong>Typora</strong>等。</p>
 <p>马克飞象，是印象笔记推出的<strong>在线Markdown编辑器</strong>，只要有网络，你就能随时开始写作。 此外，由于马克飞象和印象笔记是同一家公司的产品，通过绑定印象笔记账号，就能实时将内容保存到印象笔记中，这也间接实现了内容在多个平台间的同步。</p>
 <p>​</p>
-<figure data-type="image" tabindex="3"><img src="https://uploader.shimo.im/f/5eRkk0Y3dfoZrej0.png!thumbnail" alt="Markdown实时预览"></figure>
+<figure data-type="image" tabindex="6"><img src="https://uploader.shimo.im/f/5eRkk0Y3dfoZrej0.png!thumbnail" alt="Markdown实时预览"></figure>
 <p>马克飞象在线地址：</p>
 <p>https://maxiang.io/</p>
 <p>Typora，是一个<strong>免费</strong>的Markdown客户端软件，支持Win、macOS和Linux三个平台。</p>
@@ -163,7 +167,7 @@
 <h3 id="3markdown图床">③Markdown图床</h3>
 <h2 id="04写在最后">04.写在最后</h2>
 <p>在Markdown中插入图片：</p>
-<figure data-type="image" tabindex="4"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/%E4%B8%8A%E4%BC%A0%E5%88%B0Github%E7%9A%84%E5%9B%BE%E7%89%87.jpg" alt="上传到Github的图片"></figure>
+<figure data-type="image" tabindex="7"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/%E4%B8%8A%E4%BC%A0%E5%88%B0Github%E7%9A%84%E5%9B%BE%E7%89%87.jpg" alt="上传到Github的图片"></figure>
 
           </div>
         </div>
