@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://angola95.github.io//favicon.ico?v=1571970609152">
+<link rel="shortcut icon" href="https://angola95.github.io//favicon.ico?v=1571972725862">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://angola95.github.io//styles/main.css">
 
@@ -30,7 +30,7 @@
   <div class="site-header">
     <div class="left">
       <a href="https://angola95.github.io/">
-        <img class="avatar" src="https://angola95.github.io//images/avatar.png?v=1571970609152" alt="" width="32px" height="32px">
+        <img class="avatar" src="https://angola95.github.io//images/avatar.png?v=1571972725862" alt="" width="32px" height="32px">
       </a>
       <a href="https://angola95.github.io/">
         <h1 class="site-title">个人博客</h1>
@@ -123,51 +123,115 @@
 <p>打开Github官网，使用邮箱注册Github账号，注册时请谨慎设置自己的用户名，因为用户名后面会成为博客域名的一部分。</p>
 <figure data-type="image" tabindex="4"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025102912.png" alt="注册Github账号"></figure>
 <p>获得了Github账号后，点击左侧的Create a repository，创建一个仓库，用于存放博客的相关数据。</p>
+<figure data-type="image" tabindex="5"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025103548.png" alt="建立博客仓库"></figure>
 <p>在设置仓库名称时，它的格式是固定的，采用「<strong>用户名.github.io</strong>」的格式，因为到后面，你就会发现，<strong>仓库名称原来就是博客的域名(地址)</strong>。</p>
 <p>如下图，我的用户名为angola95，因此仓库名为「angola95.github.io」。</p>
 <p>设置好仓库名称后，勾选<strong>Initialize this repository with a README</strong>，最后点击底部的<strong>Create repository</strong>，就完成了仓库的创建。</p>
-<figure data-type="image" tabindex="5"><img src="https://uploader.shimo.im/f/IDFS4ZmduJ0YZQoE.png!thumbnail" alt="img"></figure>
-<p>创建好仓库后，点击右上方的账号头像，选择<strong>Settings</strong>。<br>
-<img src="https://uploader.shimo.im/f/FOZR02WTdgMdnb83.png!thumbnail" alt="img"><br>
-在设置菜单中，按照<strong>Developer settings</strong>--<strong>Personal access tokens</strong>的路径进入，点击右上方的<strong>Generate new token</strong>。<br>
-<img src="https://uploader.shimo.im/f/c5mF8gvzWL8e3ZjV.gif" alt="img"></p>
-<p>在New token设置页面，Note输入对Token的描述或备注，勾选下方的repo。<br>
-<img src="https://uploader.shimo.im/f/Jw3y31erpfoKcvQG.png!thumbnail" alt="img"></p>
-<p>最后将页面拉至底部，点击Generate token，就会生成一串由数字和字母组成的字符，这就是刚刚生成的Token。<br>
-<img src="https://uploader.shimo.im/f/bhg3uGfPqLUHt7F1.png!thumbnail" alt="img"></p>
+<figure data-type="image" tabindex="6"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025103711.png" alt="仓库设置"></figure>
+<p>创建好仓库后，点击右上方的账号头像，选择<strong>Settings</strong>。</p>
+<figure data-type="image" tabindex="7"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025103755.png" alt="点击Settings"></figure>
+<p>在设置菜单中，按照<strong>Developer settings</strong>--<strong>Personal access tokens</strong>的路径进入，点击右上方的<strong>Generate new token</strong>。</p>
+<figure data-type="image" tabindex="8"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/%E6%89%BE%E5%88%B0%E7%94%9F%E6%88%90Token.gif" alt="找到Token"></figure>
+<p>在New token设置页面，Note输入对Token的描述或备注，勾选下方的repo。</p>
+<figure data-type="image" tabindex="9"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025103913.png" alt="勾选repo"></figure>
+<p>最后将页面拉至底部，点击Generate token，就会生成一串由数字和字母组成的字符，这就是刚刚生成的Token。</p>
+<figure data-type="image" tabindex="10"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025103957.png" alt="查看生成的Token"></figure>
 <h3 id="2安装git">②安装Git</h3>
-<p>Git是一个<strong>分布式版本控制软件</strong>，方便多个开发者同时为一个项目贡献代码，彼此间互不影响，大大提高了团队合作的效率。 Git的数据库分为<strong>远端数据库和本地数据库</strong>，我们在Github上创建的仓库，可以看成是博客的远端数据库，而本地数据库就是我们使用的电脑。 <strong>使用Git，能将我们在本地电脑写的博客内容，自动地推送到远端的Github上</strong>，而连接本地和远端数据库的桥梁，就是前面生成的<strong>Token</strong>。 Git支持<strong>Win、macOS和Linux</strong>三大平台，下载之后，它的安装方法与普通软件一样，更换软件安装位置之后，一直点击下一步，直至开始安装。 Git下载地址：https://git-scm.com/downloads</p>
+<p>Git是一个<strong>分布式版本控制软件</strong>，方便多个开发者同时为一个项目贡献代码，彼此间互不影响，大大提高了团队合作的效率。</p>
+<p>Git的数据库分为<strong>远端数据库和本地数据库</strong>，我们在Github上创建的仓库，可以看成是博客的远端数据库，而本地数据库就是我们使用的电脑。</p>
+<p><strong>使用Git，能将我们在本地电脑写的博客内容，自动地推送到远端的Github上</strong>，而连接本地和远端数据库的桥梁，就是前面生成的<strong>Token</strong>。</p>
+<figure data-type="image" tabindex="11"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025104338.png" alt="Git官网"></figure>
+<p>Git支持<strong>Win、macOS和Linux</strong>三大平台，下载之后，它的安装方法与普通软件一样，更换软件安装位置之后，一直点击下一步，直至开始安装。</p>
+<p>Git下载地址：<br>
+https://git-scm.com/downloads</p>
 <h3 id="3安装博客写作客户端">③安装博客写作客户端</h3>
 <p>Gridea是一个静态的博客写作客户端，它提供了免费和收费的<strong>博客主题</strong>，通过应用不同的主题，可以让原本简陋的博客更有<strong>设计感</strong>。</p>
-<p>​         <img src="https://uploader.shimo.im/f/bqhpG4mWiv0RAi0d.png!thumbnail" alt="img">       安装了Gridea后，需要先进行一定的配置。 在配置页面中，Platform选择<strong>Github Pages</strong>，分支填写<strong>master</strong>，其他选项则根据个人信息进行填写。         <img src="https://uploader.shimo.im/f/ZQJNUVQwkJIZmTMJ.png!thumbnail" alt="img"></p>
+<figure data-type="image" tabindex="12"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025104432.png" alt="Git官网"></figure>
+<p>安装了Gridea后，需要先进行一定的配置。 在配置页面中，Platform选择<strong>Github Pages</strong>，分支填写<strong>master</strong>，其他选项则根据个人信息进行填写。</p>
+<figure data-type="image" tabindex="13"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025104457.png" alt="配置Gridea"></figure>
 <p>填写好信息，先点击<strong>保存</strong>，接着点击<strong>检测远程连接</strong>，查看是否连接成功。</p>
 <p>若提示远程连接失败，解决方法可参考Gridea官方给出的文档：</p>
 <p>https://dwz.cn/K9DdtABB</p>
 <p>Gridea下载地址：</p>
 <p><a href="https://gridea.dev/">https://gridea.dev</a></p>
 <h2 id="03发布你的第一篇博客">03.发布你的第一篇博客</h2>
-<p>完成上面的工作后，就算完成了博客的搭建，接下来你就可以发布自己的第一篇博客了。</p>
+<p>完成上面的工作后，就算完成了博客的搭建，接下来你就可以开始写自己的第一篇博客了。</p>
 <h3 id="1markdown语法">①Markdown语法</h3>
-<p>发布博客前，你需要有一个编辑器来写博客，Gridea中内置了文本编辑器，采用的是<strong>Markdown标记语言</strong>，而非我们平常使用的Word那种<strong>富文本格式</strong>。         <img src="https://uploader.shimo.im/f/CLxrNHBADRo30MA7.png!thumbnail" alt="img"></p>
+<p>发布博客前，你需要有一个编辑器来写博客，Gridea中内置了文本编辑器，采用的是<strong>Markdown标记语言</strong>，而非我们平常使用的Word那种<strong>富文本格式</strong>。</p>
+<p>相比富文本格式，Markdown有一个最大的优点：</p>
+<blockquote>
+<p>让人更专注于写作本身，而不是关注排版。</p>
+</blockquote>
+<p>使用Word写作时，经常会花费较多时间在排版上，而Markdown足够简单，去除了Word内置的冗余样式，选择少了，你也没必要纠结于使用哪种样式。</p>
+<figure data-type="image" tabindex="14"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025104703.png" alt="Gridea内置编辑器"></figure>
 <p>虽说Markdown是一种标记语言，但你不需要被「语言」这两个字吓到，因为它学起来真的非常简单，至多10分钟就可以完全掌握。</p>
-<p>在文字最前面加三个#号，就表示<strong>标题三</strong>的样式；在文字前后各加两个星号，相当于对文字进行加粗。</p>
-<p>​    <img src="https://uploader.shimo.im/f/cYgRLTkgB8k3cMQC.png!thumbnail" alt="img">      *左边是Markdown编辑窗口，右边是预览窗口 关于Markdown的更多常用标记语法，请自行上网搜索。</p>
+<p>在文字最前面加三个#号，就表示<strong>标题三</strong>的样式；在文字前后各加两个星号，相当于对文字进行<strong>加粗</strong>。</p>
+<p><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025104756.png" alt="实时预览Markdown"><br>
+*左边是Markdown编辑窗口，右边是预览窗口</p>
+<p>关于Markdown的更多常用标记语法，请自行上网搜索。</p>
 <h3 id="2markdown编辑器">②Markdown编辑器</h3>
-<p>Gridea自带的Markdown编辑器，不能同时并排显示编辑窗口和预览窗口，想要实时预览效果，就需要频繁点击右侧的<strong>预览按钮</strong>，这大大降低了码字效率。         <img src="https://uploader.shimo.im/f/cFo1K8IQqhEQstNk.png!thumbnail" alt="img"></p>
+<p>Gridea自带的Markdown编辑器，不能同时并排显示编辑窗口和预览窗口，想要实时预览效果，就需要频繁点击右侧的<strong>预览按钮</strong>，这大大降低了码字效率。</p>
+<figure data-type="image" tabindex="15"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025104854.png" alt="预览按钮"></figure>
 <p>为了能实时预览效果，我建议使用可实时预览效果的外部Markdown编辑器，如<strong>马克飞象</strong>和<strong>Typora</strong>等。</p>
-<p>马克飞象，是印象笔记推出的<strong>在线Markdown编辑器</strong>，只要有网络，你就能随时开始写作。 此外，由于马克飞象和印象笔记是同一家公司的产品，通过绑定印象笔记账号，就能实时将内容保存到印象笔记中，这也间接实现了内容在多个平台间的同步。</p>
-<p>​</p>
-<figure data-type="image" tabindex="6"><img src="https://uploader.shimo.im/f/5eRkk0Y3dfoZrej0.png!thumbnail" alt="Markdown实时预览"></figure>
+<p>马克飞象，是印象笔记推出的<strong>在线Markdown编辑器</strong>，只要有网络，你就能随时开始写作。</p>
+<p>此外，由于马克飞象和印象笔记是同一家公司的产品，通过绑定印象笔记账号，就能实时将内容保存到印象笔记中，这也间接实现了内容在多个平台间的同步。</p>
+<figure data-type="image" tabindex="16"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025104946.png" alt="马克飞象"></figure>
 <p>马克飞象在线地址：</p>
 <p>https://maxiang.io/</p>
 <p>Typora，是一个<strong>免费</strong>的Markdown客户端软件，支持Win、macOS和Linux三个平台。</p>
-<p>Typora虽然没有马克飞象并排的实时预览窗口，但它也是所见即所得的，</p>
+<p>Typora虽然没有马克飞象并排的实时预览窗口，但它也是所见即所得的，输入Markdown的标记符号后，就能马上看到最终的效果。</p>
+<figure data-type="image" tabindex="17"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/Typora%E6%89%80%E8%A7%81%E5%8D%B3%E6%89%80%E5%BE%97.gif" alt="所见即所得"></figure>
+<p>使用Markdown写文章，有时需要将文章发送给他人查看，若对方没有用过Markdown，你直接发送一份Markdown文件过去，会让别人一脸懵逼，不便于多人间的协作。</p>
+<p>而Typora也为我们考虑到了这一点，在导出中，有<strong>多种文件格式</strong>可以选择，如最为常见的<strong>PDF、Word和图片</strong>。</p>
+<figure data-type="image" tabindex="18"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025105312.png" alt="导出格式"></figure>
 <p>Typora下载地址：</p>
 <p>https://www.typora.io/#download</p>
 <h3 id="3markdown图床">③Markdown图床</h3>
-<h2 id="04写在最后">04.写在最后</h2>
-<p>在Markdown中插入图片：</p>
-<figure data-type="image" tabindex="7"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/%E4%B8%8A%E4%BC%A0%E5%88%B0Github%E7%9A%84%E5%9B%BE%E7%89%87.jpg" alt="上传到Github的图片"></figure>
+<p>在Markdown中，使用的图片都是通过链接的形式添加到文章中的，下图中的图片就是使用https开头的链接引用到Markdown中的。</p>
+<figure data-type="image" tabindex="19"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025105340.png" alt="图片引用"></figure>
+<p>图片通过链接进行引用，这就需要我们先将图片上传到服务器中，在网上用于存放图片的服务器，叫做「图床」。</p>
+<p>若你觉得图床比较陌生，也可以将图床理解为网络相册，如QQ空间相册、微博相册等，我们发布在QQ或微博的照片，其实就是存放在了腾讯和新浪的服务器上。</p>
+<p>网络上的图床有免费和收费两种，为最低成本地搭建一个博客，我选择使用免费的图床，而这个图床刚好就是文章最开始提到的Github。</p>
+<h3 id="4图片上传工具picgo">④图片上传工具PicGo</h3>
+<p>为方便将电脑本地的图片上传到Github，我们需要安装一个图片上传工具——PicGo。</p>
+<p>使用PicGo上传到Github的图片，它会返回图片对应的链接，接着你将链接粘贴到使用Markdown写的博客中，图片就可以正常显示了。</p>
+<p>PicGo是由一位个人开发者@PiEgg 开发的免费图片上传工具，支持Win、macOS和Linux三大平台。</p>
+<figure data-type="image" tabindex="20"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025105432.png" alt="PicGo"></figure>
+<p>安装了PicGo后，需要先对软件进行一定的设置：</p>
+<p>点击图片上传右下角的箭头，选择Github图床。</p>
+<figure data-type="image" tabindex="21"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025105508.png" alt=""></figure>
+<p>点击左侧边栏的图床设置，选择Github图床，进入Github图床的设置界面。</p>
+<p>在Github设置中，需要填写的信息有<strong>仓库名、分支名和Token</strong>等，这些信息在提示我们得去Github新建一个用作图床的仓库。</p>
+<p><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025105558.png" alt=""><br>
+下图是我新建的用作图床的仓库，创建方法与前面介绍的创建仓库操作基本一致，这里不再赘述。</p>
+<figure data-type="image" tabindex="22"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025105619.png" alt=""></figure>
+<p>创建好图床的仓库后，我们还需要创建一个新的Token，用于连接PicGo与图床仓库，创建Token的方法，前面也有介绍过。</p>
+<p>完成新仓库和Token的创建后，我们回到PicGo的配置界面，按照下图填入相关信息。</p>
+<p><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025105640.png" alt=""><br>
+*图片说明：<br>
+仓库名：格式为 Github用户名/仓库名；<br>
+分支名：设置为 master；<br>
+设定自定义域名：格式为https://raw.githubusercontent.com/Github用户名/仓库名/master，前面的部分都是固定的，后面的Github用户名和仓库名根据个人情况进行替换。</p>
+<p>完成以上设置后，点击下方的确定按钮，若配置的信息正确，在Win10系统右下角会弹出设置成功的通知。</p>
+<figure data-type="image" tabindex="23"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025105733.png" alt=""></figure>
+<p>返回到PicGo的上传区，将你想上传到的图片拖拽到上传区，待图片完成上传，软件会在桌面右下角弹出上传成功的通知。</p>
+<p>通知附带了图片上传到Github的链接，点击通知面板，就会将链接保存到复制到系统的剪贴板中。</p>
+<p><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E5%88%B0Github.gif" alt=""><br>
+此时再回到Typora，将剪贴板中的图片链接粘贴到文章中，就完成了博客图片的添加。</p>
+<figure data-type="image" tabindex="24"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/%E5%B0%86%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5%E7%B2%98%E8%B4%B4%E5%88%B0MD%E7%BC%96%E8%BE%91%E5%99%A8.gif" alt=""></figure>
+<p>PicGo下载地址：<br>
+<a href="https://dwz.cn/sNQWdAfG">https://dwz.cn/sNQWdAfG</a></p>
+<h2 id="04发布你的第一篇博客">04.发布你的第一篇博客</h2>
+<p>至此，完成了前面较为繁琐的操作后，你就可以正式发布自己的第一篇博客了。</p>
+<p>在博客客户端Gridea中，点击左下角的预览按钮，可以预览保存在本地的博客，预览后未发现问题的话，就可以点击下方的同步按钮，将保存到本地的博客推送到Github上。</p>
+<figure data-type="image" tabindex="25"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025110014.png" alt=""></figure>
+<p>完成同步后，在浏览器中输入最开始创建的仓库的名称，由于最开始我将仓库名称设置为angola95.github.io，因此在浏览器输入这个地址，就能打开我的个人博客了。</p>
+<figure data-type="image" tabindex="26"><img src="https://raw.githubusercontent.com/angola95/Picbed_PicGo/master/20191025110036.png" alt=""></figure>
+<h2 id="05写在最后">05.写在最后</h2>
+<p>使用本文介绍的方法搭建博客，我觉得有两个好处，一是不需要花时间学习搭建博客所需的技术，二是搭建的博客完全免费，不需要担心服务器到期访问不了。</p>
+<p>当然，这个方法也存在一些不足：由于Github是个国外的网站，若博客中添加的图片过大，加载的时间会延长。</p>
+<p>以上，就是本次想和你分享的零基础零成本搭建博客的方法。<br>
+希望对你有帮助，我们下次见。</p>
 
           </div>
         </div>
